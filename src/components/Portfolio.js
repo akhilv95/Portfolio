@@ -23,7 +23,7 @@ export default function Portfolio() {
   const skills = {
     Frontend: ["React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS"],
     Backend: ["Python", "Django", "REST Framework", "Node.js"],
-    Database: ["MySQL"],
+    Database: ["MySQL","PostgreSQL"],
     Tools: ["Git", "GitHub", "VS Code", "AWS Basics", "Linux"],
   };
 
