@@ -1,10 +1,12 @@
+import ehospitalityImage from "../assets/images/ehospitality.png";
 export default function Portfolio() {
     const projects = [
         {
             title: "E-Hospitality",
             description:
                 "E-Hospitality is a comprehensive hospital management system designed to streamline healthcare operations for administrators, doctors, and patients. The platform enables secure user authentication, appointment scheduling, doctor availability management, medical record maintenance, prescription tracking, billing management, and role-based dashboards. ",
-            tech: ["Python (Django REST Framework)", "JavaScript (ES6+)", "React.js", "HTML5", "CSS3", "Bootstrap", "Vite", "JWT Authentication", "REST"],
+            image:ehospitalityImage,
+                tech: ["Python (Django REST Framework)", "JavaScript (ES6+)", "React.js", "HTML5", "CSS3", "Bootstrap", "Vite", "JWT Authentication", "REST"],
             link: "https://ehospitality-1.onrender.com/"
         },
         {
@@ -16,6 +18,7 @@ export default function Portfolio() {
         },
         {
             title: "React Notes App",
+            
             description:
                 "Responsive note-taking application with category filtering, local storage persistence, editing, searching, and mobile-friendly UI.",
             tech: ["React", "JavaScript", "CSS3", "LocalStorage"],
@@ -183,7 +186,11 @@ export default function Portfolio() {
                             key={project.title}
                             className="bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden hover:scale-105 transition duration-300 shadow-xl"
                         >
-                            <div className="h-52 bg-gradient-to-r from-cyan-500 to-blue-600" />
+                            <img
+  src={project.image}
+  alt={project.title}
+  className="w-full h-52 object-cover"
+/>
 
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-4">
