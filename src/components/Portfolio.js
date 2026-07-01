@@ -1,22 +1,25 @@
 export default function Portfolio() {
     const projects = [
         {
-            title: "Employee Management System",
+            title: "E-Hospitality",
             description:
-                "Full Stack Employee Management System built using React, Django REST Framework, and MySQL with authentication, CRUD operations, image upload, and token-based API security.",
-            tech: ["React", "Django", "REST API", "MySQL", "Bootstrap"],
+                "E-Hospitality is a comprehensive hospital management system designed to streamline healthcare operations for administrators, doctors, and patients. The platform enables secure user authentication, appointment scheduling, doctor availability management, medical record maintenance, prescription tracking, billing management, and role-based dashboards. ",
+            tech: ["Python (Django REST Framework)", "JavaScript (ES6+)", "React.js", "HTML5", "CSS3", "Bootstrap", "Vite", "JWT Authentication", "REST"],
+            link: "https://ehospitality-1.onrender.com/"
         },
         {
             title: "IDOCare Crowdfunding Platform",
             description:
                 "Hospital-focused crowdfunding platform helping patients receive treatment support through secure online donations and transparent fund management.",
             tech: ["React", "Python", "Django", "Tailwind CSS", "REST API"],
+            link: ""        
         },
         {
             title: "React Notes App",
             description:
                 "Responsive note-taking application with category filtering, local storage persistence, editing, searching, and mobile-friendly UI.",
             tech: ["React", "JavaScript", "CSS3", "LocalStorage"],
+            link: ""
         },
     ];
 
@@ -176,7 +179,7 @@ export default function Portfolio() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {projects.map((project) => (
-                        <div
+                        <div 
                             key={project.title}
                             className="bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden hover:scale-105 transition duration-300 shadow-xl"
                         >
@@ -190,6 +193,9 @@ export default function Portfolio() {
                                 <p className="text-slate-300 leading-7 mb-5">
                                     {project.description}
                                 </p>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg"> view Project </button>
+                                </a>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tech.map((tech) => (
