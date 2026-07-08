@@ -125,7 +125,7 @@ export default function Portfolio() {
 
                     <div className="grid grid-cols-2 gap-5">
                         <div className="bg-slate-950 p-6 rounded-3xl border border-slate-800">
-                            <h3 className="text-3xl font-bold text-cyan-400">3+</h3>
+                            <h3 className="text-3xl font-bold text-cyan-400">4+</h3>
                             <p className="text-slate-300 mt-2">Years Experience</p>
                         </div>
 
